@@ -69,6 +69,7 @@ function userQuestion1(){
         break;
         default:
             alert("invalid");
+            console.log("invalid");
     }};
 
 function userQuestion2(){
@@ -81,6 +82,7 @@ function userQuestion2(){
         break;
         default:
             alert("invalid");
+            console.log("invalid");
     }};
       
 function userQuestion3(){
@@ -93,6 +95,7 @@ function userQuestion3(){
         break;
         default:
             alert("invalid");
+            console.log("invalid");
     }};
 
 
