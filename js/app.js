@@ -1,4 +1,3 @@
-
 "use strict";
 let usName=prompt("Please enter your name");
 let usGender=prompt("Please enter your gender (male/female)");
