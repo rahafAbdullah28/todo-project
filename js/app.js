@@ -4,9 +4,9 @@ let usGender=prompt("Please enter your gender (male/female)");
 let usAge=prompt("Please enter your age");
 let usSkip=confirm("Do you like to skip welcoming message?");
 userWelcome();
-let qOne=confirm("Do you enjoy our website?");
-let qTwo=confirm("Is the site useful?");
-let qThree=confirm("Is it easy to use?");
+let qOne=prompt("Do you enjoy our website? (yes/no)");
+let qTwo=prompt("Is the site useful? (yes/no)");
+let qThree=prompt("Is it easy to use? (yes/no)");
 let answerArr=[usName,usGender,usAge,usSkip,qOne,qTwo,qThree];
 
 function userName(){
@@ -60,27 +60,41 @@ function userWelcome(){
 
 
 function userQuestion1(){
-if(qOne){
-    console.log(qOne);
-}else{
-    console.log("invalid");
-}};
+    switch(qOne){
+        case'yes':
+        console.log("yes");
+        break;
+        case'no':
+        console.log("no");
+        break;
+        default:
+            alert("invalid");
+    }};
 
 function userQuestion2(){
-if(qTwo){
-    console.log(qTwo);
-}else{
-    console.log("invalid");
-}
-    };
+    switch(qTwo){
+        case'yes':
+        console.log("yes");
+        break;
+        case'no':
+        console.log("no");
+        break;
+        default:
+            alert("invalid");
+    }};
       
 function userQuestion3(){
-if(qThree){
-    console.log(qThree);
-}else{
-    console.log("invalid");
-}
-};
+    switch(qThree){
+        case'yes':
+        console.log("yes");
+        break;
+        case'no':
+        console.log("no");
+        break;
+        default:
+            alert("invalid");
+    }};
+
 
 userName();
 userGender();
